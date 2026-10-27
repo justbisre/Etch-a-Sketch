@@ -13,11 +13,11 @@ function createGrid(gridsize){
 let totalsize =  gridsize * gridsize;
 let squaresize = 960 / gridsize;
 
-for(let i = 0; i <= totalsize; i++ ) {
+for(let i = 0; i < totalsize; i++ ) {
     const square = document.createElement("div");
 
-    square.style.width = `${squaresize}`;
-    square.style.height = `${squaresize}`;
+    square.style.width = `${squaresize}px`;
+    square.style.height = `${squaresize}px`;
     square.style.border = "1px solid #ddd";
     square.style.boxSizing= "border-box";
 
@@ -34,7 +34,7 @@ for(let i = 0; i <= totalsize; i++ ) {
             square.dataset.darkness = currentDarkness;
             let opacityvalue = currentDarkness * 0.1;
         
-        square.style.backgroundColor = `rgba(0,0,0 ${opacityvalue})`;
+        square.style.backgroundColor = `rgba(0,0,0, ${opacityvalue})`;
         }
     });
 
