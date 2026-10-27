@@ -2,12 +2,7 @@ const container = document.querySelector("#container");
 const resizenBtn = document.querySelector("#resizen-btn");
 
 
-/*function getrandomColor(){
-    let r = Math.floor(Math.random() * 256);
-    let g = Math.floor(Math.random() * 256);
-    let b = Math.floor(Math.random() * 256);
-    return `rgb(${r}, ${g}, ${b})`;
-}*/
+
 function createGrid(gridsize){
 
 let totalsize =  gridsize * gridsize;
